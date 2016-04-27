@@ -21,7 +21,13 @@ if($_GET['post_id']) {
     $section->addText("Content: " . $content, array('name'=>'Tahoma', 'size'=>16, 'bold'=>true));
 
     $objWriter = PHPWord_IOFactory::createWriter($PHPWord, 'Word2007');
-    $objWriter->save( $plugin_dir . "/files/" . $title . ".docx");
+
+    // Make directory named current timestamp
+    $time = time();
+    mkdir($plugin_dir .  "/files/" . $time , 0777, true);
+
+
+    $objWriter->save( $plugin_dir . "/files/" . $time . "/" . $title . ".docx");
 // End File Export in Excel
 } else {
     echo "<b>Please input the Post Id.</b>";
