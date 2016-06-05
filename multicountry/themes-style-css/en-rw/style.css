@@ -1,0 +1,11 @@
+/*
+Theme Name: Vacker Rwanda
+Theme URI: https://en-rw.vackerglobal.com/
+Author: VackerGlobal
+Author URI: https://www.vackerglobal.com/
+Description: Custom theme created on country basis
+Version: 1
+*/
+span.wpcf7-not-valid-tip{
+	display: inline !important;
+}

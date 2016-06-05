@@ -1,0 +1,11 @@
+/*
+Theme Name: Vacker South Africa
+Theme URI: https://en-za.vackerglobal.com/
+Author: VackerGlobal
+Author URI: https://www.vackerglobal.com/
+Description: Custom theme created on country basis
+Version: 1
+*/
+span.wpcf7-not-valid-tip{
+	display: inline !important;
+}
